@@ -1,9 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 
@@ -15,7 +9,10 @@
 
 </a>
 
-<h3  align="center">Shop UI Concept</h3>
+<h3  align="center">MyShop-Mini</h3>
+<h3 align="center">UI sederhana dan modern untuk aplikasi e-commerce berbasis Flutter.
+Proyek ini menampilkan layout halaman beranda dengan banner promo, kategori produk, list produk, dan section “Special for You”</h3>
+
 
 <p float="left">
 <img  width="200" src="readme/screenshot.png"/>
@@ -25,129 +22,102 @@
 
 <p  align="center">
 
-Cross-platform UI concept for shopping app written in Flutter/Dart.
 
-<br  />
 
-<br  />
+📱 Fitur Utama
 
-·
+      Tampilan Home Page modern dan responsif
+      
+      Banner promo dengan gambar & tombol aksi
+      
+      Kategori produk (All, Recommended, Popular, dll)
+      
+      Grid produk lengkap dengan gambar, nama, harga, dan tombol add-to-cart (+)
+      
+      Section "Special for You" dengan list horizontal
+      
+      Mendukung berbagai ukuran layar menggunakan SafeArea, GridView, dan ScrollView
 
-<a  href="https://github.com/WarMac4964/ShopUI-Concept/issues">Report Bug</a>
+📂 Struktur UI & Widget yang Digunakan
 
-·
+🏗️ Struktur Dasar
 
-<a  href="https://github.com/WarMac4964/ShopUI-Concept/issues">Request Feature</a>
+      Scaffold — kerangka utama satu halaman
+      
+      SafeArea — mencegah konten tertutup notch / status bar
+      
+      SingleChildScrollView — membuat halaman dapat discroll
 
-</p>
+🔶 Header / AppBar
 
-</p>
+      Widget yang digunakan:
+      
+      Row — menyusun ikon menu, jam, dan tombol search
+      
+      IconButton / Icon — ikon Search, Menu Grid, Keranjang
+      
+      SizedBox — jarak antar elemen
 
-<!-- TABLE OF CONTENTS -->
+🔶 Banner Promo / Produk Utama
 
-<details  open="open">
+      Widget yang digunakan:
+      
+      Container — background hitam, rounded corner
+      
+      ClipRRect — membuat gambar memiliki radius
+      
+      Image.asset / Image.network — menampilkan gambar
+      
+      Column — menyusun label New Product, judul, dan tombol
+      
+      ElevatedButton / TextButton — tombol Buy Now!
 
-<summary>Table of Contents</summary>
+🔶 Section “Our Products”
 
-<ol>
+      Widget:
+      
+      Padding — jarak kiri kanan
+      
+      Text — judul dan label kategori
+      
+      Row — menampilkan kategori secara horizontal
+      
+      GestureDetector / InkWell — kategori dapat ditekan (onTap)
+      
+      Container + BoxDecoration — kategori aktif (gradient)
 
-<li>
+🔶 Grid Produk
 
-<a  href="#about-the-project">About The Project</a>
+      Widget:
+      
+      GridView.builder — menampilkan list produk
+      
+      childAspectRatio — menjaga proporsi card
+      
+      Card / Container — membungkus item produk
+      
+      Column — gambar, nama, harga
+      
+      Stack + Positioned — tombol “+” di pojok kanan bawah
 
-<ul>
+🔶 Section “Special for You”
 
-<li><a  href="#built-with">Built With</a></li>
+      Widget:
+      
+      Container — kartu background hitam lengkung
+      
+      Row — judul + tombol “See All”
+      
+      ListView horizontal — item spesial dalam bentuk list
+      
+      Row + Expanded — gambar + nama produk + harga + tombol “+”
 
-<li><a  href="#Feature">Features</a></li>
+🎨 Styling
 
-</ul>
-
-</li>
-
-<li>
-
-<a  href="#getting-started">Getting Started</a>
-
-</li>
-
-<li><a  href="#contact">Contact</a></li>
-
-</ol>
-
-</details>
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-<img  src="readme/ShopUI-Concept.gif"  alt="feature"  width="250"  >
-
-UI Concept for shopping app written in Flutter/Dart for Android & iOS.
-
-### Built With
-
-- [Flutter](https://flutter.dev/)
-
-- [Dart](https://dart.dev/)
-
-## Getting Started
-
-To start with the project, you can simply download the [apk]() here or you can follow along the instructions to
-
-download and run the whole project in emulator.
-
-1. Clone the repo
-
-```sh
-
-git clone https://github.com/WarMac4964/ShopUI-Concept.git
-
-```
-
-2. Inside the project folder run
-
-```sh
-
-flutter pub get
-
-```
-
-3. Open iOS/Android Emulator, For iOS the command is:
-
-```sh
-
-open -a simulator
-
-```
-
-4. Then run the project using
-
-```sh
-
-flutter run
-
-```
-
-See the [open issues](https://github.com/WarMac4964/ShopUI-Concept/issues) for a list of proposed features (and known issues).
-
-<!-- CONTACT -->
-
-## Contact
-
-Anurag Tyagi - [@capttyg](https://www.instagram.com/capttyg/) - anurag.tyagi4964@gmail.com
-
-Project Link: [https://github.com/WarMac4964/ShopUI-Concept](https://github.com/WarMac4964/ShopUI-Concept)
-
-[contributors-shield]: https://img.shields.io/github/contributors/WarMac4964/ShopUI-Concept.svg?style=for-the-badge
-[contributors-url]: https://github.com/WarMac4964/ShopUI-Concept/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/WarMac4964/ShopUI-Concept.svg?style=for-the-badge
-[forks-url]: https://github.com/WarMac4964/ShopUI-Concept/network/members
-[stars-shield]: https://img.shields.io/github/stars/WarMac4964/ShopUI-Concept.svg?style=for-the-badge
-[stars-url]: https://github.com/WarMac4964/ShopUI-Concept/stargazers
-[issues-shield]: https://img.shields.io/github/issues/WarMac4964/ShopUI-Concept.svg?style=for-the-badge
-[issues-url]: https://github.com/WarMac4964/ShopUI-Concept/issues
-[license-shield]: https://img.shields.io/github/license/WarMac4964/ShopUI-Concept.svg?style=for-the-badge
-[license-url]: https://github.com/WarMac4964/ShopUI-Concept/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/anurag-tyagi-395425178/
+      BoxDecoration — warna, gradient, border radius, shadow
+      
+      LinearGradient — warna tombol & kategori
+      
+      BoxShadow — bayangan lembut
+      
+      CircleAvatar / Container (circle) — tombol add (+)
